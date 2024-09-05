@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rylan Badgett | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Rylan Badgett</h1>
+      <p>Full-Stack Software Engineer</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+  <span>
+    Photo by 
+    <a href="https://unsplash.com/@marvelous?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">
+      Marvin Meyer
+    </a>
+    on
+    <a href="https://unsplash.com/photos/people-sitting-down-near-table-with-assorted-laptop-computers-SYTO3xs06fU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">
+      Unsplash
+    </a>
+  </span>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Rylan, a passionate software engineer with a background in full-stack web development. I love
+        creating efficient and impactful solutions to real-world problems. Welcome to my portfolio!
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project" onClick="window.open('https://github.com/Rybad614/Capstone2', '_blank')">
+          <h3>Team Management App</h3>
+          <p>A full-stack application designed to manage team events and communications.</p>
+        </div>
+        <div class="project" onClick="window.open('https://github.com/Rybad614/Capstone1?tab=readme-ov-file#tuneseek-find-music-by-the-lyrics', '_blank')">
+          <h3>Song Detection App</h3>
+          <p>An application to find music based on lyrics provided by the user.</p>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <!-- Add more skills as needed -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:RYBAD614@GMAIL.COM">RYBAD614@GMAIL.COM</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/rylan-badgett" target="_blank">rylan-badgett</a></p>
+      <p>GitHub: <a href="https://github.com/rybad614" target="_blank">rybad614</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Rylan Badgett. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Smooth Scrolling Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
